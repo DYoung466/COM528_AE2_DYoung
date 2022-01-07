@@ -13,7 +13,10 @@
 
 
 ## Setup
-
+1. `git clone https://github.com/DYoung466/COM528_AE2_DYoung.git`
+2. In Apache Netbeans, navigate to the shoppingCartApplication-web and run this
+<br >![Run application](https://user-images.githubusercontent.com/71987991/148574748-3fccad1c-412e-4fd3-b1e5-7d79643b23c0.png "Run application")
+3. The project will open on the index page located here : http://localhost:8080/shoppingCartApplication/index.html
 
 ## Feature List
 * Log in - User/admin
