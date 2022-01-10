@@ -9,8 +9,6 @@
 * [Bootstrap (formatting)](https://getbootstrap.com/ "Bootstrap link")
 * [Spring](https://spring.io/ "Spring link")
 
-## Introduction
-
 
 ## Setup
 1. `git clone https://github.com/DYoung466/COM528_AE2_DYoung.git`
