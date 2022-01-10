@@ -24,10 +24,10 @@ public class ShoppingServiceImpl implements ShoppingService {
     // note ConcurrentHashMap instead of HashMap if map can be altered while being read
     private Map<String, ShoppingItem> itemMap = new ConcurrentHashMap<String, ShoppingItem>();
 
-    private List<ShoppingItem> itemlist = Arrays.asList(new ShoppingItem("house", 20000.00),
-            new ShoppingItem("hen", 5.00),
-            new ShoppingItem("car", 5000.00),
-            new ShoppingItem("pet alligator", 65.00)
+    private List<ShoppingItem> itemlist = Arrays.asList(new ShoppingItem("house", 20000.00, 1),
+            new ShoppingItem("hen", 5.00, 1),
+            new ShoppingItem("car", 5000.00, 1),
+            new ShoppingItem("pet alligator", 65.00, 1)
     );
 
     public ShoppingServiceImpl() {

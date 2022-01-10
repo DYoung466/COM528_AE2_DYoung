@@ -27,9 +27,10 @@ public class ShoppingItem {
         
     }
 
-    public ShoppingItem(String name, Double price) {
+    public ShoppingItem(String name, Double price, Integer quantity) {
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
     }
 
     @Id

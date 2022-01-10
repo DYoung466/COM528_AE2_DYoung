@@ -74,14 +74,15 @@ public class PopulateDatabaseOnStart {
         }
         
         
-        List<ShoppingItem> itemlist = Arrays.asList(new ShoppingItem("house", 20000.00),
-         new ShoppingItem("hen", 5.00),
-         new ShoppingItem("car", 5000.00),
-         new ShoppingItem("pet alligator", 65.00),
-         new ShoppingItem("snowboard", 50.00)
+        List<ShoppingItem> itemlist = Arrays.asList(new ShoppingItem("house", 20000.00, 1),
+         new ShoppingItem("hen", 5.00, 1),
+         new ShoppingItem("car", 5000.00, 1),
+         new ShoppingItem("pet alligator", 65.00, 1),
+         new ShoppingItem("snowboard", 50.00, 1)
          );
         
         for (ShoppingItem item:itemlist){
+            
             shoppingItemCatalogRepository.save(item);
         }
         

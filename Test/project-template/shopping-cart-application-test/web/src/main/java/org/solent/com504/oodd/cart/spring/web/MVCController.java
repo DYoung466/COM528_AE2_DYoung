@@ -138,7 +138,12 @@ public class MVCController {
         return "contact";
     }
     
-    
+    /**
+     *
+     * @param model
+     * @param session
+     * @return
+     */
     @RequestMapping(value = "/catalog", method = {RequestMethod.GET, RequestMethod.POST})
     public String catalogList(Model model, HttpSession session) {
 
@@ -165,6 +170,7 @@ public class MVCController {
     }
     
     
+ 
     
 
     /*

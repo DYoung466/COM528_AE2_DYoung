@@ -12,6 +12,8 @@ import org.solent.com504.oodd.cart.dao.impl.UserRepository;
 import org.solent.com504.oodd.cart.model.dto.Address;
 import org.solent.com504.oodd.cart.model.dto.User;
 import org.solent.com504.oodd.cart.model.dto.UserRole;
+import org.solent.com504.oodd.cart.model.dto.ShoppingItem;
+import org.solent.com504.oodd.cart.model.service.ShoppingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -445,7 +447,8 @@ public class UserAndLoginController {
 
     
     
-    
+    @Autowired
+    ShoppingService shoppingService = null;
     
     
     
@@ -554,7 +557,15 @@ public class UserAndLoginController {
             model.addAttribute("errorMessage", errorMessage);
             return ("home");
         }
-
+        
+        
+        
+        List<ShoppingItem> availableItems = shoppingService.getAvailableItems();
+        model.addAttribute("availableItems", availableItems);
+        
+        
+        // used to set tab selected
+        model.addAttribute("selectedPage", "admin");
         
         
         
