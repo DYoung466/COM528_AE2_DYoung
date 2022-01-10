@@ -46,3 +46,35 @@
 
 ![DYoung_Customer_Use_Cases drawio](https://user-images.githubusercontent.com/71987991/148755900-54d5ee6b-b269-4fef-8282-7ba33e7f2d50.png)
 
+
+## Test Plan:
+### Customer
+
+|Test                                             	|Outcome                        	|
+|--------------------------------------------------	|--------------------------------	|
+| Customer                                        	|                         	      |
+|--------------------------------------------------	|--------------------------------	|
+| Customer logs in                                 	| Passed                         	|
+| Customer manages details                         	| Passed                         	|
+| Customer changes password                        	| Passed                         	|
+| Customer returns to homepage                     	| Passed                         	|
+| Customer adds product to basket if not in stock  	| Fail - Product not in stock    	|
+|---------------------------------------------------|---------------------------------|
+|Anonymous                                        	|                         	      |
+|---------------------------------------------------|---------------------------------|
+|User accesses page                        	        |Passed                          	|
+|User browses stock                               	|Passed                          	|
+|User attempts to access forbidden page           	|Passed- Returned to homepage    	|
+|User creates account                      	        |Passed – Account created        	|
+|User manages details                      	        |Passed- Becomes customer        	|
+|---------------------------------------------------|---------------------------------|
+|Administrator                                      |                         	      |
+|---------------------------------------------------|---------------------------------|
+|Admin logs in                                     	|Passed                           |
+|Admin manages user details                        	|Passed                           |
+|Admin navigates to catalogue      	                |Passed                           |
+|Admin navigates to modify item    	                |Passed                           |
+|Admin changes item details        	                |Fail –No Item details            |
+|Admin manages own details                         	|Passed                           |
+|Admin deactivates an account      	                |Passed                           |
+
