@@ -18,6 +18,18 @@
 <br >![Run application](https://user-images.githubusercontent.com/71987991/148574748-3fccad1c-412e-4fd3-b1e5-7d79643b23c0.png "Run application")
 3. The project will open on the index page located here : http://localhost:8080/shoppingCartApplication/index.html
 
+## Requirements
+
+* Log in - User/admin
+* View products
+* Manage account details
+* Manage accounts (administrator only)
+* Manage catalogue (administrator only) 
+* Add product to basket
+* Checkout (using previous card checker and ReST interface)
+* Convert order to invoice and store in invoice repository
+
+
 ## Feature List
 * Log in - User/admin
 * View products
